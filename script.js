@@ -6,14 +6,14 @@ c = document.getElementById('slot3');
 var jp = document.getElementById('you-win');
 
 function nextImageOne(el){
-	if (el.src.match("images/cherry_slot.PNG")){
-		el.src = "images/lemon_slot.PNG";
+	if (el.src.match("cherry_slot.PNG")){
+		el.src = "lemon_slot.PNG";
 		// if the image is a cherry, change it to a lemon!
-	} else if (el.src.match("images/lemon_slot.PNG")){
-		el.src = "images/orange_slot.PNG";
+	} else if (el.src.match("lemon_slot.PNG")){
+		el.src = "orange_slot.PNG";
 		// if the image is a lemon, change it to an orange!
-	} else if (el.src.match("images/orange_slot.PNG")){
-		el.src = "images/cherry_slot.PNG";
+	} else if (el.src.match("orange_slot.PNG")){
+		el.src = "cherry_slot.PNG";
 		// if the image is an orange, change it to a cherry!
 	} else {
 		// do nothing
@@ -21,21 +21,21 @@ function nextImageOne(el){
 }
 
 function checkCherries(el) {
-	if (a.src.match('images/cherry_slot.PNG') && b.src.match('images/cherry_slot.PNG') && c.src.match('images/cherry_slot.PNG')){
+	if (a.src.match('cherry_slot.PNG') && b.src.match('cherry_slot.PNG') && c.src.match('cherry_slot.PNG')){
 		jp.play();
 		console.log("Jackpot!");
 		a.classList.add('opaque')
 		b.classList.add('opaque')
 		c.classList.add('opaque')
 		alert("Jackpot!!!!")
-	} else if (a.src.match('images/lemon_slot.PNG') && b.src.match('images/lemon_slot.PNG') && c.src.match('images/lemon_slot.PNG')){
+	} else if (a.src.match('lemon_slot.PNG') && b.src.match('lemon_slot.PNG') && c.src.match('lemon_slot.PNG')){
 		jp.play();
 		console.log("Jackpot!");
 		a.classList.add('opaque')
 		b.classList.add('opaque')
 		c.classList.add('opaque')
 		alert("Jackpot!!!!")
-	} else if (a.src.match('images/orange_slot.PNG') && b.src.match('images/orange_slot.PNG') && c.src.match('images/orange_slot.PNG')){
+	} else if (a.src.match('orange_slot.PNG') && b.src.match('orange_slot.PNG') && c.src.match('orange_slot.PNG')){
 		jp.play();
 		console.log("Jackpot!");
 		a.classList.add('opaque')
